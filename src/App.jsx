@@ -12,7 +12,7 @@ const App = () => {
   const [region, setRegion] = useState("");
 
   useEffect(() => {
-    axios.get("/data.json")  // Load from local JSON
+    axios.get("data.json")  // Load from local JSON
       .then((res) => setCountries(res.data))
       .catch((err) => console.error(err));
   }, []);
