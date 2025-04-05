@@ -36,9 +36,11 @@ header {
 .app.dark h1 {
   font-size: 24px;
   font-weight: 600;
+  text-decoration: none;
 }
 h1{
   margin-left: 40px;
+  text-decoration:none;
 }
 .app.light select{
   margin-top: 30px;
@@ -204,3 +206,159 @@ button:hover {
   }
 }
   
+
+
+
+
+.country-detail {
+  padding: 3rem 5rem;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button.light {
+  background-color: #ffffff;
+  color: #111517;
+}
+
+.back-button.dark {
+  background-color: #2b3945;
+  color: #ffffff;
+}
+
+.country-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.country-flag {
+  width: 100%;
+}
+
+.country-flag img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.country-info h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  font-weight: 800;
+}
+
+.details-grid {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.details-column {
+  flex: 1;
+}
+
+.details-column p {
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.details-column p strong {
+  font-weight: 600;
+}
+
+.border-countries {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.border-countries h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.border-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.border-link {
+  padding: 0.3rem 1.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.border-link.light {
+  background-color: #ffffff;
+  color: #111517;
+}
+
+.border-link.dark {
+  background-color: #2b3945;
+  color: #ffffff;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .country-detail {
+    padding: 2rem 1rem;
+  }
+
+  .back-button {
+    margin-bottom: 2.5rem;
+  }
+
+  .country-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .country-flag img {
+    max-width: 320px;
+  }
+
+  .country-info h1 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .details-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .border-countries {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .border-countries h3 {
+    margin-right: 0;
+  }
+}
